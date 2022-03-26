@@ -39,7 +39,15 @@ public class StackClass {
             }
             return head.data;
         }
-
+        public String pop() {
+            if (isEmpty()) {
+                System.out.println("List is Empty");
+            }
+            String top = head.data;
+            head = head.next;
+            return top;
+        }
+    }
 
         public static void main(String[] args) {
             Stack stack = new Stack();
@@ -54,4 +62,3 @@ public class StackClass {
             }
         }
     }
-}
