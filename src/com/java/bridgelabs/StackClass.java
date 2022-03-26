@@ -22,7 +22,7 @@ public class StackClass {
 
             return head == null;
         }
-
+ // Add push method
         public static void push(String data) {
             Node newNode = new Node(data);
             if (isEmpty()) {
@@ -32,13 +32,14 @@ public class StackClass {
             newNode.next = head;
             head = newNode;
         }
-
+  // Add peek method
         public static String peek() {
             if (isEmpty()) {
                 System.out.println("List is Empty");
             }
             return head.data;
         }
+  // Add pop method
         public String pop() {
             if (isEmpty()) {
                 System.out.println("List is Empty");
