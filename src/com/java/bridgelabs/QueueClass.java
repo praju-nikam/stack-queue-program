@@ -48,6 +48,14 @@ public class QueueClass {
         }
 
 
+        // peek - Peek The Element
+        public static String peek() {
+            if (isEmpty()) {
+                System.out.println("Empty Queue");
+            }
+            return head.data;
+        }
+
     }
 
     public static void main(String[] args) {
