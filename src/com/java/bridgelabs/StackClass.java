@@ -33,6 +33,13 @@ public class StackClass {
             head = newNode;
         }
 
+        public static String peek() {
+            if (isEmpty()) {
+                System.out.println("List is Empty");
+            }
+            return head.data;
+        }
+
 
         public static void main(String[] args) {
             Stack stack = new Stack();
@@ -41,7 +48,10 @@ public class StackClass {
             Stack.push("Rohit");
             Stack.push("Vaibhav");
 
-
+            while (!Stack.isEmpty()) {
+                System.out.println(Stack.peek());
+                stack.pop();
+            }
         }
     }
 }
