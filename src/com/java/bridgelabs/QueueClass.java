@@ -39,6 +39,7 @@ public class QueueClass {
                 System.out.println("Empty Queue");
             }
             String front = head.data;
+            // single Element in queue use this if condition
             if (head == tail) {
                 tail = null;
             }
