@@ -33,27 +33,8 @@ public class QueueClass {
             tail = newNode;
         }
 
-        //Dequeue  - Delete Element in Queue
-        public static String remove() {
-            if (isEmpty()) {
-                System.out.println("Empty Queue");
-            }
-            String front = head.data;
-            // single Element in queue use this if condition
-            if (head == tail) {
-                tail = null;
-            }
-            head = head.next;
-            return front;
-        }
 
-        // peek - Peek The Element
-        public static String peek() {
-            if (isEmpty()) {
-                System.out.println("Empty Queue");
-            }
-            return head.data;
-        }
+
     }
 
     public static void main(String[] args) {
@@ -63,9 +44,6 @@ public class QueueClass {
         Queue.add("Anvi");
         Queue.add("Rohit");
 
-        while (! Queue.isEmpty()) {
-            System.out.println(Queue.peek());
-            Queue.remove();
-        }
+
     }
 }
